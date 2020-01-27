@@ -1,0 +1,67 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (C:\Users\ostad\source\repos\Dev\Life of Ghengis\bin\intermediates\Win32\Debug\) contains files shared from another project (BirchEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  AssetManager.cpp
+  Collision.cpp
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\transformcomponent.h(54): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(26): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(66): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(70): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(41): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  ECS.cpp
+  Game.cpp
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\transformcomponent.h(54): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(26): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(66): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(70): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(41): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(61): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(62): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(130): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(131): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(162): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(163): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(177): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\game.cpp(178): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+  GameObject.cpp
+  main.cpp
+  Map.cpp
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\transformcomponent.h(54): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\tilecomponent.h(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(26): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(66): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(70): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(41): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ostad\source\repos\dev\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  TextureManager.cpp
+  TextureManager.h
+  Vector2D.cpp
+  Generating Code...
+C:\Users\ostad\source\repos\Dev\Life of Ghengis\bin\intermediates\Win32\Debug\TextureManager.obj : warning LNK4042: object specified more than once; extras ignored
+  BirchEngine.vcxproj -> C:\Users\ostad\source\repos\Dev\Life of Ghengis\bin\Win32\Debug\GEngine.exe
