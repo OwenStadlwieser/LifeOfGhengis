@@ -18,6 +18,10 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY)
 	char tile, tile1, tile2;
 	std::fstream mapFile;
 	mapFile.open(path);
+	if (!mapFile.is_open())
+	{
+		throw new std::exception("Rule file could not be opened");
+	}
 	int srcX, srcY;
 	int val1, val2, val3;
 	for (int y = 0; y < sizeY; y++)

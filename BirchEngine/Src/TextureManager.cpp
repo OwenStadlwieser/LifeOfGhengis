@@ -5,6 +5,11 @@ SDL_Texture* TextureManager::LoadTexture(const char* texture)
 {
 	// create surface
 	SDL_Surface* tempSurface = IMG_Load(texture);
+	if (!tempSurface)
+	{
+		SDL_Log("Unable to initialize loader: %s", IMG_GetError());
+		return nullptr;
+	}
 	SDL_Texture* tex = SDL_CreateTextureFromSurface(Game::renderer, tempSurface);
 	// clean up
 	SDL_FreeSurface(tempSurface);
