@@ -9,7 +9,14 @@ This game was created using an entity component system, each entity posseses mul
 The game engine was built using C++ and the SDL2 library.
 
 How to run:
-Open the build solution in visual studio code and run the main.cpp file. 
+Install SDL_2 x86 source image and development libraries from https://libsdl.org/projects/SDL_image/
+Open the birch engine build solution in visual studio code 
+Under Project properties: 
+    Add the include folder from the source image directory to the project include directories
+    Add the directory the development library was unzipped to, to the project include directories
+    Add the lib\x86 folder from the source image directory to the project library directories 
+    Add the directory the development library was unzipped to, to the project library directories
+run the main.cpp file. 
 
 Debugging:
 If a linking error occurs resave texturemanager.cpp and compile it first.
