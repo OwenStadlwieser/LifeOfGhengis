@@ -1,0 +1,75 @@
+﻿  AssetManager.cpp
+  Collision.cpp
+d:\life of ghengis\birchengine\src\ecs\transformcomponent.h(54): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(26): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(66): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(70): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(41): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  ECS.cpp
+  Game.cpp
+d:\life of ghengis\birchengine\src\ecs\transformcomponent.h(54): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(26): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(66): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(70): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(41): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(61): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(62): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(130): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(131): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(162): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(163): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(177): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\game.cpp(178): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+  GameObject.cpp
+  main.cpp
+  Map.cpp
+d:\life of ghengis\birchengine\src\ecs\transformcomponent.h(54): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\tilecomponent.h(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(26): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(66): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\womenmovementcomponent.h(70): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(41): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\life of ghengis\birchengine\src\ecs\kidmovementcomponent.h(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  TextureManager.cpp
+  TextureManager.h
+  Vector2D.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018: The "VCMessage" task failed unexpectedly.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018: System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at System.String.Format(IFormatProvider provider, String format, Object[] args)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at Microsoft.Build.Shared.ResourceUtilities.FormatString(String unformatted, Object[] args)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at Microsoft.Build.Utilities.TaskLoggingHelper.FormatString(String unformatted, Object[] args)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at Microsoft.Build.Utilities.TaskLoggingHelper.FormatResourceString(String resourceName, Object[] args)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at Microsoft.Build.Utilities.TaskLoggingHelper.LogWarningWithCodeFromResources(String messageResourceName, Object[] messageArgs)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at Microsoft.Build.CPPTasks.VCMessage.Execute()
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute()
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): error MSB4018:    at Microsoft.Build.BackEnd.TaskBuilder.<ExecuteInstantiatedTask>d__26.MoveNext()

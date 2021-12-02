@@ -1,0 +1,17 @@
+﻿  AssetManager.cpp
+d:\life of ghengis\birchengine\src\game.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Collision.cpp
+d:\life of ghengis\birchengine\src\collision.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Game.cpp
+d:\life of ghengis\birchengine\src\game.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  GameObject.cpp
+d:\life of ghengis\birchengine\src\game.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  main.cpp
+d:\life of ghengis\birchengine\src\game.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Map.cpp
+d:\life of ghengis\birchengine\src\game.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  TextureManager.cpp
+d:\life of ghengis\birchengine\src\game.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  TextureManager.h
+d:\life of ghengis\birchengine\src\game.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Generating Code...
