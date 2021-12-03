@@ -70,6 +70,10 @@ public:
 	{
 		TextureManager::Draw(texture, srcRect, destRect, spriteFlip);
 	}
+	void drawSprite(float targetx, float targety)
+	{
+		TextureManager::DrawSprite(texture, srcRect, destRect, spriteFlip, targetx, targety, transform->position.x, transform->position.y);
+	}
 	void Play(const char* animName)
 	{
 		frames = animations[animName].frames;

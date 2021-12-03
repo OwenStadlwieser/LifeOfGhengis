@@ -37,4 +37,8 @@ public:
 	{
 		TextureManager::Draw(texture, srcRect, destRect, SDL_FLIP_NONE);
 	}
+	void drawTile(float targetx, float targety)
+	{
+		TextureManager::DrawTile(texture, srcRect, destRect, SDL_FLIP_NONE,targetx, targety, position.x, position.y);
+	}
 };

@@ -42,6 +42,7 @@ void Game::init(const char* title, int width, int height, bool fullscreen)
 		renderer = SDL_CreateRenderer(window, -1, 0);
 		if (renderer)
 		{
+			std::cout << "Sett" << std::endl;
 			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 		}
 
@@ -185,7 +186,7 @@ void Game::render()
 	SDL_RenderClear(renderer);
 	for (auto& t : tiles)
 	{
-		t->draw();
+		t->getComponent<TileComponent>().drawTile(newPlayer.getComponent<TransformComponent>().position.x, newPlayer.getComponent<TransformComponent>().position.y);
 	}
 	for (auto& p : players)
 	{
@@ -193,11 +194,11 @@ void Game::render()
 	}
 	for (auto& w : womens)
 	{
-		w->draw();
+		w->getComponent<SpriteComponent>().drawSprite(newPlayer.getComponent<TransformComponent>().position.x, newPlayer.getComponent<TransformComponent>().position.y);
 	}
 	for (auto& k : kids)
 	{
-		k->draw();
+		k->getComponent<SpriteComponent>().drawSprite(newPlayer.getComponent<TransformComponent>().position.x, newPlayer.getComponent<TransformComponent>().position.y);;
 	}
 	for (auto& c : colliders)
 	{
