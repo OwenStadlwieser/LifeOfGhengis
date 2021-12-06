@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ce353f93-bf7c-4368-be55-a8c0faf6e793": {
+      "ProjectGuid": "ce353f93-bf7c-4368-be55-a8c0faf6e793",
+      "DisplayName": "GEngine",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
