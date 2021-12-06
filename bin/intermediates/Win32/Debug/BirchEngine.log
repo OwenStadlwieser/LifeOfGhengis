@@ -1,5 +1,34 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: The intermediate directory (C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\bin\intermediates\Win32\Debug\) contains files shared from another project (BirchEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  TextureManager.cpp
-C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\TextureManager.cpp(37,31): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\TextureManager.cpp(57,35): warning C4244: 'argument': conversion from 'double' to 'Uint8', possible loss of data
+  Game.cpp
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TransformComponent.h(54,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TileComponent.h(20,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TileComponent.h(21,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TileComponent.h(33,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TileComponent.h(34,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\WomenMovementComponent.h(26,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\WomenMovementComponent.h(27,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\WomenMovementComponent.h(58,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\WomenMovementComponent.h(62,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\WomenMovementComponent.h(66,55): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\WomenMovementComponent.h(70,55): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\KidMovementComponent.h(41,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\KidMovementComponent.h(45,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\KidMovementComponent.h(49,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\KidMovementComponent.h(53,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TextComponent.h(21,33): warning C4838: conversion from 'int' to 'Uint8' requires a narrowing conversion
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TextComponent.h(21,41): warning C4838: conversion from 'int' to 'Uint8' requires a narrowing conversion
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TextComponent.h(21,49): warning C4838: conversion from 'int' to 'Uint8' requires a narrowing conversion
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TextComponent.h(30,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TextComponent.h(31,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TextComponent.h(39,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\ECS\TextComponent.h(40,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(89,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(90,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(162,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(163,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(213,51): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(214,51): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(219,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(220,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\BirchEngine\Src\Game.cpp(187,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   BirchEngine.vcxproj -> C:\Users\Ostad\Documents\GitHub\LifeOfGhengis\bin\Win32\Debug\GEngine.exe

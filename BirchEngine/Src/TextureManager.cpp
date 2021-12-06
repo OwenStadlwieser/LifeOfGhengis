@@ -16,10 +16,17 @@ SDL_Texture* TextureManager::LoadTexture(const char* texture)
 	SDL_FreeSurface(tempSurface);
 	return tex;
 }
+
 void TextureManager::Draw(SDL_Texture* tex, SDL_Rect src, SDL_Rect dest, SDL_RendererFlip flip)
 {
 	SDL_RenderCopyEx(Game::renderer, tex, &src, &dest, NULL, NULL, flip);
 };
+
+void TextureManager::DrawText(SDL_Texture* tex, SDL_Rect dest, SDL_RendererFlip flip)
+{
+	SDL_RenderCopy(Game::renderer, tex, NULL, &dest);
+};
+
 
 void TextureManager::DrawTile(SDL_Texture* tex, SDL_Rect src, SDL_Rect dest, SDL_RendererFlip flip, float targetx, float targety, float positionx, float positiony)
 {

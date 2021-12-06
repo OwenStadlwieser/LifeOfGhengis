@@ -8,3 +8,4 @@
 #include "SpriteComponent.h"
 #include "WomenMovementComponent.h"
 #include "KidMovementComponent.h"
+#include "TextComponent.h"

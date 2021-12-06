@@ -15,6 +15,9 @@ SDL_Event Game::event;
 SDL_Rect Game::camera = { 400, 1000, 800, 640 };
 bool Game::isRunning = true;
 bool Game::alive = false;
+int color[3] = { 255, 0, 0 };
+TTF_Font* Game::fontPtr = nullptr;
+
 Game::Game()
 {}
 
@@ -24,12 +27,17 @@ Game::~Game()
 
 void Game::init(const char* title, int width, int height, bool fullscreen)
 {
+	TTF_Init();
+	Game::fontPtr = TTF_OpenFont("./assets/OpenSans.ttf", 24);
+	if (!Game::fontPtr) {
+		throw std::exception("font could not be loaded");
+	}
 	int flags = 0;
 	std::cout << "Welcome to the life of Ghengis" << std::endl;
-	std::cout << "The goal of the game is to create a swarm by interacting with the women in the red shirt" << std::endl;
-	std::cout << "Unfortunately your swarm does not like you and will attempt to kill you" << std::endl;
-	std::cout << "Use WASD for controls, press P to play" << std::endl;
-	std::cout << "Press 'esc' to quit" <<  std::endl;
+	std::cout << "The goal of the game is to create a swarm by interacting with the women in the red shirt." << std::endl;
+	std::cout << "Unfortunately your swarm does not like you and will attempt to kill you!" << std::endl;
+	std::cout << "Use WASD for controls, press P to play!" << std::endl;
+	std::cout << "Press 'esc' to quit!" <<  std::endl;
 	std::cout << "Developed by Owen Stadlwieser" << std::endl;
 	if (fullscreen)
 	{
@@ -42,7 +50,6 @@ void Game::init(const char* title, int width, int height, bool fullscreen)
 		renderer = SDL_CreateRenderer(window, -1, 0);
 		if (renderer)
 		{
-			std::cout << "Sett" << std::endl;
 			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 		}
 
@@ -55,6 +62,26 @@ void Game::init(const char* title, int width, int height, bool fullscreen)
 	newPlayer.addComponent<SpriteComponent>("assets/player_anims.png",true);
 	newPlayer.addComponent<KeyBoardController>();
 	newPlayer.addComponent<ColliderComponent>("player");
+	const char* stringArr[] = {
+		"The goal of the game is to create a swarm by interacting with the women in the red shirt.",
+		"Unfortunately your swarm does not like you and will attempt to kill you!",
+		"Use WASD for controls, press P to play!",
+		"Press 'esc' to quit!",
+		"Developed by Owen Stadlwieser"
+	};
+	auto& text(manager.addEntity());
+	text.addComponent<TextComponent>(550, 100, 0, 0, 1, 1, color, "Welcome to The Life of Ghengis", renderer, Game::fontPtr);
+	text.addGroup(Game::groupText);
+	for (int i = 0; i < 5; i++) {
+		int width = 500;
+		int height = 30;
+		if (i > 2) {
+			width = 300;
+		}
+		auto& text(manager.addEntity());
+		text.addComponent<TextComponent>(width, height, 0, 100 +  i * 30, 1, 1, color, stringArr[i], renderer, Game::fontPtr);
+		text.addGroup(Game::groupText);
+	}
 	newPlayer.addGroup(groupPlayers);
 	for (int i = 0; i < 30; i++)
 	{
@@ -74,6 +101,7 @@ auto& players(manager.getGroup(Game::groupPlayers));
 auto& womens(manager.getGroup(Game::groupWomen));
 auto& kids(manager.getGroup(Game::groupKid));
 auto& colliders(manager.getGroup(Game::groupColliders));
+auto& text(manager.getGroup(Game::groupText));
 void Game::handleEvents()
 {
 	
@@ -113,6 +141,9 @@ void Game::update()
 	{
 		manager.refresh();
 		manager.update();
+		for (auto& t : text) {
+			t->destroy();
+		}
 		for (auto& c : colliders)
 		{
 			SDL_Rect cCol = c->getComponent<ColliderComponent>().collider;
@@ -146,30 +177,34 @@ void Game::update()
 		int i = 0;
 		for (auto& k : kids)
 		{
-			k->getComponent<KidMovementComponent>().updatevelocity(newPlayer.getComponent<TransformComponent>().position.x - 20 * Game::cnt / 2 + 20 * i + rand() % (30 + 1 - 30) - 30,
-				newPlayer.getComponent<TransformComponent>().position.y - 20 * Game::cnt / 2 + 20 * i + rand() % (30 + 1 - 30) - 30);
+			k->getComponent<KidMovementComponent>().updatevelocity(playerPos.x - 20 * Game::cnt / 2 + 20 * i + rand() % (30 + 1 - 30) - 30,
+				playerPos.y - 20 * Game::cnt / 2 + 20 * i + rand() % (30 + 1 - 30) - 30);
 			i++;
 			SDL_Rect kCol = k->getComponent<ColliderComponent>().collider;
 			if (Collision::KP(kCol, playerCol))
 			{
-				std::cout << "Game Over" << std::endl;
-				std::cout << "You created a swarm of " << Game::cnt  << std::endl;
-				std::cout << "Press P to play again" << std::endl;
+				char buffer[50];
+				sprintf(buffer, "You created a swarm of %d", Game::cnt);
+				const char* stringArr[] = {
+					buffer,
+					"Press P to play again",
+					"Press 'esc' to quit!"
+				};
+				int width = 300;
+				int height = 30;
+				int screenW = 800;
+				int screenH = 640;
+				auto& text(manager.addEntity());
+				text.addComponent<TextComponent>(width + 100, height + 50, (screenW/2) - (width+100)/2, 100, 1, 1, color, "Game Over", renderer, Game::fontPtr);
+				text.addGroup(Game::groupText);
+				for (int i = 0; i < 3; i++) {
+					auto& text(manager.addEntity());
+					text.addComponent<TextComponent>(width, height, (screenW / 2) - (width) / 2, 150 + (i +1) * 30, 1, 1, color, stringArr[i], renderer, Game::fontPtr);
+					text.addGroup(Game::groupText);
+				}
 				Game::alive = false;
 			}
 		}
-		camera.h = 50 * 64 - 640;
-		camera.w = 50 * 64 - 800;
-		camera.x = newPlayer.getComponent<TransformComponent>().position.x - 400;
-		camera.y = newPlayer.getComponent<TransformComponent>().position.y - 320;
-		if (camera.x < 0)
-			camera.x = 0;
-		if (camera.y < 0)
-			camera.y = 0;
-		if (camera.x > camera.w)
-			camera.x = camera.w;
-		if (camera.y > camera.h)
-			camera.y = camera.h;
 		Vector2D pVel = newPlayer.getComponent<TransformComponent>().velocity;
 		int pSpeed = newPlayer.getComponent<TransformComponent>().speed;
 		for (auto t : tiles)
@@ -179,14 +214,27 @@ void Game::update()
 			t->getComponent<TileComponent>().destRect.y += -(pVel.y * pSpeed);
 		}
 	}
+	camera.h = 50 * 64 - 640;
+	camera.w = 50 * 64 - 800;
+	camera.x = playerPos.x - 400;
+	camera.y = playerPos.y - 320;
+	if (camera.x < 0)
+		camera.x = 0;
+	if (camera.y < 0)
+		camera.y = 0;
+	if (camera.x > camera.w)
+		camera.x = camera.w;
+	if (camera.y > camera.h)
+		camera.y = camera.h;
 }
 
 void Game::render()
 {
 	SDL_RenderClear(renderer);
+	Vector2D playerPos = newPlayer.getComponent<TransformComponent>().position;
 	for (auto& t : tiles)
 	{
-		t->getComponent<TileComponent>().drawTile(newPlayer.getComponent<TransformComponent>().position.x, newPlayer.getComponent<TransformComponent>().position.y);
+		t->getComponent<TileComponent>().drawTile(newPlayer.getComponent<TransformComponent>().position.x, playerPos.y);
 	}
 	for (auto& p : players)
 	{
@@ -194,15 +242,23 @@ void Game::render()
 	}
 	for (auto& w : womens)
 	{
-		w->getComponent<SpriteComponent>().drawSprite(newPlayer.getComponent<TransformComponent>().position.x, newPlayer.getComponent<TransformComponent>().position.y);
+		w->getComponent<SpriteComponent>().drawSprite(playerPos.x, playerPos.y);
 	}
 	for (auto& k : kids)
 	{
-		k->getComponent<SpriteComponent>().drawSprite(newPlayer.getComponent<TransformComponent>().position.x, newPlayer.getComponent<TransformComponent>().position.y);;
+		k->getComponent<SpriteComponent>().drawSprite(playerPos.x, playerPos.y);;
 	}
 	for (auto& c : colliders)
 	{
 		c->draw();
+	}
+
+	if (!Game::alive)
+	{
+		for (auto& tex : text)
+		{
+			tex->getComponent<TextComponent>().drawText();
+		}
 	}
 	SDL_RenderPresent(renderer);
 }
@@ -223,5 +279,6 @@ void Game::clean()
 }
 void Game::quit()
 {
+	TTF_Quit();
 	SDL_Quit();
 }

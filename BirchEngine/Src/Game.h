@@ -1,5 +1,6 @@
 #pragma once
 #include "SDL.h"
+#include "SDL_ttf.h"
 #include <iostream>
 #include "SDL_image.h"
 #include <vector>
@@ -24,6 +25,7 @@ public:
 	static SDL_Renderer *renderer;
 	static SDL_Event event;
 	static SDL_Rect camera;
+	static TTF_Font* fontPtr;
 	//static AssetManager* assets;
 	enum groupLabels : std::size_t
 	{
@@ -32,7 +34,8 @@ public:
 		groupColliders,
 		groupWomen,
 		groupLabels,
-		groupKid
+		groupKid,
+		groupText
 	};
 private:
 	int cnt = 0;
